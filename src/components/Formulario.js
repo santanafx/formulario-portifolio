@@ -5,6 +5,7 @@ import { Select } from './Select'
 import { Date } from './Date'
 import { CheckRadio } from './CheckRadio'
 import { TextArea } from './TextArea'
+import { CheckBox } from './CheckBox'
 
 export const Formulario = () => {
 
@@ -43,7 +44,9 @@ export const Formulario = () => {
                         <Input label='3-' placeholder='Digite uma responsabilidade.' />
                     </div>
                     <div className={styles.formularioCheck}>
-
+                        <CheckBox />
+                        <CheckBox />
+                        <CheckBox />
                     </div>
                 </div>
             </form>

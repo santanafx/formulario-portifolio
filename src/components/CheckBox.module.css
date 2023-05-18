@@ -1,0 +1,14 @@
+.containerCheckBox {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+label {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+input {
+    align-self: center;
+}
