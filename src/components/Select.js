@@ -1,7 +1,15 @@
 import React from 'react'
 import styles from './Select.module.css'
+import { Context } from '../context/GlobalContext'
 
-export const Select = ({ label, handleSelect }) => {
+export const Select = ({ label }) => {
+
+    const [global, dispatch] = React.useContext(Context);
+
+    const handleSelect = (event) => {
+        global.supervisor = event;
+        console.log(global)
+    }
 
     return (
         <>

@@ -9,23 +9,20 @@ import { CheckBox } from './CheckBox'
 
 export const Formulario = () => {
 
-    const [supervisor, setSupervisor] = React.useState('');
-
-    const handleSelect = (element) => {
-        setSupervisor(element);
-        window.localStorage.setItem('supervisor', element);
+    const handleSubmit = (event) => {
+        event.preventDefault();
     }
 
     return (
         <div className={styles.formularioContainerBg}>
-            <form className={styles.formularioContainer} >
+            <form onSubmit={(event) => handleSubmit(event)} className={styles.formularioContainer} >
                 <h1>Formulário de descrição do trabalho</h1>
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
                         <Input label='Cargo: ' placeholder='Digite seu cargo.' />
                         <Input label='Responsável: ' placeholder='Digite sua função.' />
                         <Input label='Departamento: ' placeholder='Digite seu departamento.' />
-                        <Select label='Supervisor: ' handleSelect={handleSelect} />
+                        <Select label='Supervisor: ' />
                     </div>
                     <div className={styles.formularioCheck}>
                         <Date label='Data: ' />
@@ -49,6 +46,7 @@ export const Formulario = () => {
                         <CheckBox />
                     </div>
                 </div>
+                <button className={styles.formularioBotao}>Enviar dados</button>
             </form>
         </div>
     )
