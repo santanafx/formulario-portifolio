@@ -7,6 +7,7 @@
     background-color: var(--branco);
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
 }
 
 .checkRadioContainer span:nth-child(1) {

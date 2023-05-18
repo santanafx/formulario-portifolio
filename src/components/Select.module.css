@@ -2,6 +2,13 @@
     display: flex;
 }
 
+.selectBox {
+    padding: 4px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
+}
+
 .selectContainer label {
     margin-right: 10px;
 }

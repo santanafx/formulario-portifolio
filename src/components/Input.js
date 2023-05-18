@@ -6,7 +6,7 @@ export const Input = ({ label, placeholder }) => {
         <>
             <div className={styles.inputContainer}>
                 <label htmlFor='campo'>{label}</label>
-                <input type="text" id='campo' placeholder={placeholder} />
+                <input className={styles.inputCampos} type="text" id='campo' placeholder={placeholder} />
             </div >
         </>
     )

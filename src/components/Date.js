@@ -6,7 +6,7 @@ export const Date = ({ label }) => {
         <>
             <div className={styles.dateContainer}>
                 <label htmlFor='date'>{label}
-                    <input type="date" id='date' />
+                    <input className={styles.inputDate} type="date" id='date' />
                 </label>
             </div>
         </>
