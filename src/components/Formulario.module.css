@@ -1,0 +1,32 @@
+.formularioContainerBg {
+    display: flex;
+    justify-content: center;
+}
+
+.formularioContainer {
+    text-align: center;
+    width: 80%;
+    background-color: aquamarine;
+    gap: 2rem;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.formularioInput {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formularioInput input {
+    width: 200px
+}
+
+.formularioCheck {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}

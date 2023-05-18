@@ -16,14 +16,21 @@ export const Formulario = () => {
 
 
     return (
-        <div>
-            <form >
-                <Input label='Cargo:' placeholder='Digite seu cargo.' />
-                <Input label='Responsável por:' placeholder='Digite sua função.' />
-                <Input label='Departamento:' placeholder='Digite seu departamento.' />
-                <Select label='Nome do supervisor:' handleSelect={handleSelect} />
-                <Date label='Data:' />
-                <CheckBox label='Status emprego:' />
+        <div className={styles.formularioContainerBg}>
+            <form className={styles.formularioContainer} >
+                <h1>Formulário de descrição do trabalho</h1>
+                <div style={{ display: 'flex' }}>
+                    <div className={styles.formularioInput}>
+                        <Input label='Cargo: ' placeholder='Digite seu cargo.' />
+                        <Input label='Responsável por: ' placeholder='Digite sua função.' />
+                        <Input label='Departamento: ' placeholder='Digite seu departamento.' />
+                        <Select label='Nome do supervisor: ' handleSelect={handleSelect} />
+                    </div>
+                    <div className={styles.formularioCheck}>
+                        <Date label='Data: ' />
+                        <CheckBox label='Status emprego: ' />
+                    </div>
+                </div>
             </form>
         </div>
     )
