@@ -3,6 +3,7 @@ import styles from './Formulario.module.css'
 import { Input } from './Input'
 import { Select } from './Select'
 import { Date } from './Date'
+import { CheckBox } from './CheckBox'
 
 export const Formulario = () => {
 
@@ -22,7 +23,7 @@ export const Formulario = () => {
                 <Input label='Departamento:' placeholder='Digite seu departamento.' />
                 <Select label='Nome do supervisor:' handleSelect={handleSelect} />
                 <Date label='Data:' />
-
+                <CheckBox label='Status emprego:' />
             </form>
         </div>
     )
