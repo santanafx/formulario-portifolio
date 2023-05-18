@@ -1,4 +1,4 @@
-.checkBoxContainer {
+.checkRadioContainer {
     width: 40%;
     display: grid;
     grid-template-columns: 1fr 0.3fr;
@@ -9,7 +9,7 @@
     padding: 10px;
 }
 
-.checkBoxContainer span:nth-child(1) {
+.checkRadioContainer span:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1;
     justify-self: center;
@@ -24,45 +24,45 @@ label {
     margin-bottom: 5px;
 }
 
-.checkBoxContainer label:nth-child(2) {
+.checkRadioContainer label:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
 }
 
-.checkBoxContainer label:nth-child(3) {
+.checkRadioContainer label:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
 }
 
-.checkBoxContainer label:nth-child(4) {
+.checkRadioContainer label:nth-child(4) {
     grid-column: 1;
     grid-row: 4;
 }
 
-.checkBoxContainer label:nth-child(5) {
+.checkRadioContainer label:nth-child(5) {
     grid-column: 1;
     grid-row: 5;
 }
 
-.checkBoxContainer input:nth-child(6) {
+.checkRadioContainer input:nth-child(6) {
     grid-column: 2;
     grid-row: 2;
     justify-self: start;
 }
 
-.checkBoxContainer input:nth-child(7) {
+.checkRadioContainer input:nth-child(7) {
     grid-column: 2;
     grid-row: 3;
     justify-self: start;
 }
 
-.checkBoxContainer input:nth-child(8) {
+.checkRadioContainer input:nth-child(8) {
     grid-column: 2;
     grid-row: 4;
     justify-self: start;
 }
 
-.checkBoxContainer input:nth-child(9) {
+.checkRadioContainer input:nth-child(9) {
     grid-column: 2;
     grid-row: 5;
     justify-self: start;

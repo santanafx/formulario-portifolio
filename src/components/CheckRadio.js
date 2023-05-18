@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './CheckBox.module.css'
+import styles from './CheckRadio.module.css'
 
-export const CheckBox = ({ label }) => {
+export const CheckRadio = ({ label }) => {
     return (
         <>
-            <div className={styles.checkBoxContainer}>
+            <div className={styles.checkRadioContainer}>
                 <span>{label}</span>
 
                 <label htmlFor='regular'>Regular:</label>

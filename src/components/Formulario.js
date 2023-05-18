@@ -3,7 +3,7 @@ import styles from './Formulario.module.css'
 import { Input } from './Input'
 import { Select } from './Select'
 import { Date } from './Date'
-import { CheckBox } from './CheckBox'
+import { CheckRadio } from './CheckRadio'
 import { TextArea } from './TextArea'
 
 export const Formulario = () => {
@@ -18,7 +18,7 @@ export const Formulario = () => {
     return (
         <div className={styles.formularioContainerBg}>
             <form className={styles.formularioContainer} >
-                <h1 className={styles.formularioText}>Formulário de descrição do trabalho</h1>
+                <h1>Formulário de descrição do trabalho</h1>
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
                         <Input label='Cargo: ' placeholder='Digite seu cargo.' />
@@ -28,13 +28,24 @@ export const Formulario = () => {
                     </div>
                     <div className={styles.formularioCheck}>
                         <Date label='Data: ' />
-                        <CheckBox label='Status emprego: ' />
+                        <CheckRadio label='Status emprego: ' />
                     </div>
                 </div>
                 <div>
-                    <h4 className={styles.formularioText}>A descrição do cargo é feita para descrever o trabalho que é organizado e executado por um funcionário totalmente qualificado (que possua conhecimentos, habilidades e experiência exigidas pela posição).</h4>
+                    <h4>A descrição do cargo é feita para descrever o trabalho que é organizado e executado por um funcionário totalmente qualificado (que possua conhecimentos, habilidades e experiência exigidas pela posição).</h4>
                 </div>
                 <TextArea />
+                <h4>Liste em ordem de importância as principais responsabilidades do trabalho e marque a estimativa de tempo que gasta em cada responsabilidade.</h4>
+                <div style={{ display: 'flex' }}>
+                    <div className={styles.formularioInput}>
+                        <Input label='1 - ' placeholder='Digite seu cargo.' />
+                        <Input label='2 - ' placeholder='Digite sua função.' />
+                        <Input label='3 - ' placeholder='Digite seu departamento.' />
+                    </div>
+                    <div className={styles.formularioCheck}>
+
+                    </div>
+                </div>
             </form>
         </div>
     )
