@@ -4,12 +4,16 @@
 }
 
 .formularioContainer {
-
     width: 80%;
-    background-color: aquamarine;
+    background-color: var(--verde);
     gap: 2rem;
     padding: 50px;
     border-radius: 20px;
+}
+
+.formularioTitulo {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .formularioInput {

@@ -1,14 +1,15 @@
 .checkBoxContainer {
+    width: 40%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.3fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 20px;
+    margin-left: 150px;
     background-color: var(--branco);
     border-radius: 10px;
     padding: 10px;
 }
 
-span {
+.checkBoxContainer span:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1;
     justify-self: center;
@@ -23,42 +24,46 @@ label {
     margin-bottom: 5px;
 }
 
-label:nth-child(1) {
+.checkBoxContainer label:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
 }
 
-label:nth-child(2) {
+.checkBoxContainer label:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
 }
 
-label:nth-child(3) {
+.checkBoxContainer label:nth-child(4) {
     grid-column: 1;
     grid-row: 4;
 }
 
-label:nth-child(4) {
+.checkBoxContainer label:nth-child(5) {
     grid-column: 1;
     grid-row: 5;
 }
 
-input:nth-child(1) {
+.checkBoxContainer input:nth-child(6) {
     grid-column: 2;
     grid-row: 2;
+    justify-self: start;
 }
 
-input:nth-child(2) {
+.checkBoxContainer input:nth-child(7) {
     grid-column: 2;
     grid-row: 3;
+    justify-self: start;
 }
 
-input:nth-child(3) {
+.checkBoxContainer input:nth-child(8) {
     grid-column: 2;
     grid-row: 4;
+    justify-self: start;
 }
 
-input:nth-child(4) {
+.checkBoxContainer input:nth-child(9) {
     grid-column: 2;
     grid-row: 5;
+    justify-self: start;
 }

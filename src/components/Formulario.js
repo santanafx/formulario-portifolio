@@ -14,11 +14,10 @@ export const Formulario = () => {
         window.localStorage.setItem('supervisor', element);
     }
 
-
     return (
         <div className={styles.formularioContainerBg}>
             <form className={styles.formularioContainer} >
-                <h1>Formulário de descrição do trabalho</h1>
+                <h1 className={styles.formularioTitulo}>Formulário de descrição do trabalho</h1>
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
                         <Input label='Cargo: ' placeholder='Digite seu cargo.' />

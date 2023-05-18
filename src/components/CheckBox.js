@@ -13,10 +13,10 @@ export const CheckBox = ({ label }) => {
                 <label htmlFor='estagiário'>Estagiário:</label>
 
 
-                <input type="radio" id='regular' />
-                <input type="radio" id='temporario' />
-                <input type="radio" id='meio expediente' />
-                <input type="radio" id='estagiário' />
+                <input type="radio" id='regular' name='radio' />
+                <input type="radio" id='temporario' name='radio' />
+                <input type="radio" id='meio expediente' name='radio' />
+                <input type="radio" id='estagiário' name='radio' />
 
             </div>
         </>
