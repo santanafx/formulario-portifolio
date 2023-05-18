@@ -38,9 +38,9 @@ export const Formulario = () => {
                 <h4>Liste em ordem de importância as principais responsabilidades do trabalho e marque a estimativa de tempo que gasta em cada responsabilidade.</h4>
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
-                        <Input label='1 - ' placeholder='Digite seu cargo.' />
-                        <Input label='2 - ' placeholder='Digite sua função.' />
-                        <Input label='3 - ' placeholder='Digite seu departamento.' />
+                        <Input label='1-' placeholder='Digite uma responsabilidade.' />
+                        <Input label='2-' placeholder='Digite uma responsabilidade.' />
+                        <Input label='3-' placeholder='Digite uma responsabilidade.' />
                     </div>
                     <div className={styles.formularioCheck}>
 
