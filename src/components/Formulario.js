@@ -4,6 +4,7 @@ import { Input } from './Input'
 import { Select } from './Select'
 import { Date } from './Date'
 import { CheckBox } from './CheckBox'
+import { TextArea } from './TextArea'
 
 export const Formulario = () => {
 
@@ -17,7 +18,7 @@ export const Formulario = () => {
     return (
         <div className={styles.formularioContainerBg}>
             <form className={styles.formularioContainer} >
-                <h1 className={styles.formularioTitulo}>Formulário de descrição do trabalho</h1>
+                <h1 className={styles.formularioText}>Formulário de descrição do trabalho</h1>
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
                         <Input label='Cargo: ' placeholder='Digite seu cargo.' />
@@ -30,6 +31,10 @@ export const Formulario = () => {
                         <CheckBox label='Status emprego: ' />
                     </div>
                 </div>
+                <div>
+                    <h4 className={styles.formularioText}>A descrição do cargo é feita para descrever o trabalho que é organizado e executado por um funcionário totalmente qualificado (que possua conhecimentos, habilidades e experiência exigidas pela posição).</h4>
+                </div>
+                <TextArea />
             </form>
         </div>
     )
