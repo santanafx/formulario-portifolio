@@ -1,0 +1,11 @@
+.selectContainer {
+    display: flex;
+}
+
+.selectContainer label {
+    padding-right: 10px;
+}
+
+.selectContainer select {
+    width: 100%;
+}

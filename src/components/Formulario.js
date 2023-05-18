@@ -22,9 +22,9 @@ export const Formulario = () => {
                 <div style={{ display: 'flex' }}>
                     <div className={styles.formularioInput}>
                         <Input label='Cargo: ' placeholder='Digite seu cargo.' />
-                        <Input label='Responsável por: ' placeholder='Digite sua função.' />
+                        <Input label='Responsável: ' placeholder='Digite sua função.' />
                         <Input label='Departamento: ' placeholder='Digite seu departamento.' />
-                        <Select label='Nome do supervisor: ' handleSelect={handleSelect} />
+                        <Select label='Supervisor: ' handleSelect={handleSelect} />
                     </div>
                     <div className={styles.formularioCheck}>
                         <Date label='Data: ' />

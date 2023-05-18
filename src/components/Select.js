@@ -1,17 +1,19 @@
 import React from 'react'
+import styles from './Select.module.css'
 
 export const Select = ({ label, handleSelect }) => {
 
     return (
         <>
-            <label htmlFor='select'>{label}
+            <div className={styles.selectContainer}>
+                <label htmlFor='select'>{label}</label>
                 <select id='select' onChange={(event) => handleSelect(event.target.value)}>
                     <option value=""></option>
                     <option value="Gustavo Rodriguez" >Gustavo Rodriguez</option>
                     <option value="Lucas Amorin" >Lucas Amorin</option>
                     <option value="João Tenório" >João Tenório</option>
                 </select>
-            </label>
+            </div>
         </>
     )
 }
