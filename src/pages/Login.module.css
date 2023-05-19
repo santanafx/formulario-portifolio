@@ -11,7 +11,7 @@
     background-color: var(--verde);
     padding: 30px;
     border-radius: 20px;
-    min-width: 300px;
+    min-width: 400px;
 
 }
 
@@ -21,6 +21,7 @@
     border-style: none;
     box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
     margin: 15px 0;
+    min-width: 200px;
 }
 
 .loginBotao {
@@ -38,4 +39,16 @@
 
 .loginBotao:hover {
     color: var(--branco);
+}
+
+.loginBotaoContainer {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+}
+
+.senhaRepetirContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
