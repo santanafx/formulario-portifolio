@@ -6,13 +6,10 @@ import { Sobre } from '../pages/Sobre'
 
 export const PublicRoutes = () => {
     return (
-
         <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/login' element={<Login />} />
             <Route path='/Sobre' element={<Sobre />} />
         </Routes>
-
-
     )
 }

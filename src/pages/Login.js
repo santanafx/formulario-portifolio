@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './Login.module.css'
+import { Context } from '../context/GlobalContext';
 
 export const Login = () => {
 
     const [usuario, setUsuario] = React.useState('');
     const [senha, setSenha] = React.useState('');
+    const { setAutenticar, dataBase } = React.useContext(Context);
 
     const validarUsuario = (usuario) => {
         return usuario?.toString().includes('@') && usuario?.toString().includes('.')
@@ -17,9 +19,15 @@ export const Login = () => {
 
     const handleForm = (event) => {
         event.preventDefault();
-        console.log(validarUsuario(usuario), validarSenha(senha))
-    }
+        dataBase.map(element => {
+            if (usuario === element.usuario && senha === element.senha) {
+                setAutenticar(true);
+            }
+        }
+        )
 
+        // console.log(validarUsuario(usuario), validarSenha(senha))
+    }
 
     return (
         <div className={styles.loginContainerBg}>

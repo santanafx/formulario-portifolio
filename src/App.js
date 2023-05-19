@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import React from 'react';
 import { Context } from './context/GlobalContext';
 import { PublicRoutes } from './routes/PublicRoutes';
+import { PrivateRoutes } from './routes/PrivateRoutes';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      {autenticar ? console.log('verdadeiro') : <PublicRoutes />}
+      {autenticar ? <PrivateRoutes /> : <PublicRoutes />}
     </BrowserRouter>
   );
 }
