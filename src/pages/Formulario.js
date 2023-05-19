@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './Formulario.module.css'
-import { Input } from './Input'
-import { Select } from './Select'
-import { Date } from './Date'
-import { CheckRadio } from './CheckRadio'
-import { TextArea } from './TextArea'
-import { CheckBox } from './CheckBox'
+import { Input } from '../components/Input'
+import { Select } from '../components/Select'
+import { Date } from '../components/Date'
+import { CheckRadio } from '../components/CheckRadio'
+import { TextArea } from '../components/TextArea'
+import { CheckBox } from '../components/CheckBox'
 
 export const Formulario = () => {
 
