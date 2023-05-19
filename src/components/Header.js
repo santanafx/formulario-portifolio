@@ -11,7 +11,7 @@ export const Header = () => {
                 <nav className={styles.headerMenu}>
                     <Link className={styles.linkMenuJob} to='/'><MdWork />Job.Forms</Link>
                     <div className={styles.linkMenuLoginSobre}>
-                        <Link className={styles.linkMenuLogin} to='/formulario'><GrLogin />Login</Link>
+                        <Link className={styles.linkMenuLogin} to='/login'><GrLogin />Login</Link>
                         <Link className={styles.linkMenuSobre} to='/sobre'>Sobre</Link>
                     </div>
                 </nav>
