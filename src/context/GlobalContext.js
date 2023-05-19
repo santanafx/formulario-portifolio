@@ -1,26 +1,12 @@
 import React from 'react'
 
-const initialState = {
-    supervisor: '',
-}
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        default:
-            return state
-    }
-
-}
-
-
-
 export const Context = React.createContext();
 
 export const ContextProvider = ({ children }) => {
-    const value = React.useReducer(reducer, initialState);
+    const [autenticar, setAutenticar] = React.useState(false);
 
     return (
-        <Context.Provider value={value}>
+        <Context.Provider value={{ autenticar, setAutenticar }}>
             {children}
         </Context.Provider>
     );

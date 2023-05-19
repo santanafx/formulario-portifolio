@@ -1,24 +1,19 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
-import { Inicio } from './pages/Inicio';
-import { Login } from './pages/Login';
-import { Formulario } from './pages/Formulario';
-import { Sobre } from './pages/Sobre';
-
+import React from 'react';
+import { Context } from './context/GlobalContext';
+import { PublicRoutes } from './routes/PublicRoutes';
 
 function App() {
+
+  const { autenticar } = React.useContext(Context);
 
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path='/' element={<Inicio />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/formulario' element={<Formulario />} />
-        <Route path='/Sobre' element={<Sobre />} />
-      </Routes>
+      {autenticar ? console.log('verdadeiro') : <PublicRoutes />}
     </BrowserRouter>
   );
 }
