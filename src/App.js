@@ -2,10 +2,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
-import { Formulario } from './components/Formulario';
-import { Sobre } from './components/Sobre';
-import { Login } from './components/Login';
-import { Inicio } from './components/Inicio';
+import { Inicio } from './pages/Inicio';
+import { Login } from './pages/Login';
+import { Formulario } from './pages/Formulario';
+import { Sobre } from './pages/Sobre';
+
 
 function App() {
   return (
