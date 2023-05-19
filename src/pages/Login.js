@@ -21,6 +21,7 @@ export const Login = () => {
         event.preventDefault();
         dataBase.map(element => {
             if (usuario === element.usuario && senha === element.senha) {
+
                 setAutenticar(true);
             }
         }
