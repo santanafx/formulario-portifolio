@@ -1,12 +1,15 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Formulario } from './components/Formulario';
 
 function App() {
   return (
-    <div>
-      <Formulario />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Formulario />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
