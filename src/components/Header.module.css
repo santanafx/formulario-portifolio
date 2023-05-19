@@ -1,0 +1,52 @@
+.headerMenu {
+    background-color: var(--verde);
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkMenuJob {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.linkMenuLoginSobre {
+    display: flex;
+
+}
+
+.linkMenuLogin {
+    text-decoration: none;
+    color: var(--preto);
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.linkMenuLogin:hover {
+    color: var(--branco);
+}
+
+.linkMenuSobre {
+    text-decoration: none;
+    color: var(--preto);
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.linkMenuSobre:hover {
+    color: var(--branco);
+}
