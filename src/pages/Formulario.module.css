@@ -7,7 +7,7 @@
     width: 80%;
     background-color: var(--verde);
     gap: 2rem;
-    padding: 50px;
+    padding: 30px;
     border-radius: 20px;
 }
 
@@ -49,6 +49,7 @@ h4 {
     cursor: pointer;
     font-size: 1.5rem;
     background-color: var(--cinza);
+    transition: 0.5s;
 }
 
 .formularioBotao:hover {

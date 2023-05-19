@@ -1,10 +1,10 @@
-.sobreContainerBg {
+.inicioContainerBg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sobreContainer {
+.inicioContainer {
     background-color: var(--verde);
     max-width: 400px;
     padding: 30px;
